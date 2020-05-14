@@ -21,7 +21,7 @@ const map = (num, inmin, inmax, outmin, outmax) => {
 
 var zoom = 0.9;
 var zoomratio = 1.5;
-var movx = -0.3;
+var movx = -0.4;
 var movy = 1;
 
 document.body.onclick = function (event) {
