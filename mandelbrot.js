@@ -52,18 +52,16 @@ function animation() {
 
 function generatePalette() {
     var palette = [];
-    var roffset = 16;
-    var goffset = 24;
-    var boffset = 0;
+    var roffset = 24;
+    var goffset = 0;
+    var boffset = 16;
     for (var i = 0; i < 256; i++) {
         palette[i] = { r: roffset, g: goffset, b: boffset };
 
         if (i < 64) {
-            goffset += 3;
-            roffset += 0.2;
-        } else if (i < 128) {
             roffset += 3;
-            goffset += 0.1;
+        } else if (i < 128) {
+            goffset += 3;
         } else if (i < 192) {
             boffset += 3;
         }
